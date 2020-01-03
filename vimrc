@@ -60,6 +60,9 @@ let g:airline_theme = 'codedark'
 "make NertTree wider
 let g:NERDTreeWinSize=50
 
+"ignore node_modules in NerdTree
+let g:NERDTreeIgnore = ['^node_modules$']
+
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 map <C-n> :NERDTreeToggle<CR>
