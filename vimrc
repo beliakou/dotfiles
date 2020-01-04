@@ -36,6 +36,9 @@ set noswapfile
 "execute pathogen#infect()
 syntax on
 
+"toggle paste mode: autocompletion not working in paste mode
+set pastetoggle=<F2>
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
@@ -50,6 +53,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 
 Plug 'tomasiser/vim-code-dark'
+
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
@@ -99,6 +104,7 @@ let g:coc_global_extensions = [
   \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-eslint', 
+  \ 'coc-tslint',
   \ 'coc-prettier', 
   \ 'coc-json', 
   \ ]
