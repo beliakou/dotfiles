@@ -88,7 +88,7 @@ function! SyncTree()
   endif
 endfunction
 
-"autocmd BufEnter * call SyncTree()
+autocmd BufEnter * call SyncTree()
 "=========================== NerdTree config end =====================
 
 
