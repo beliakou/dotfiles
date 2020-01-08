@@ -1,3 +1,5 @@
+set clipboard=unnamedplus
+
 set mouse-=a
 set number
 set showmatch
@@ -38,6 +40,9 @@ syntax on
 
 "toggle paste mode: autocompletion not working in paste mode
 set pastetoggle=<F2>
+
+"highlight caret in insert mode
+autocmd InsertEnter,InsertLeave * set cul!
 
 call plug#begin('~/.vim/plugged')
 
@@ -127,11 +132,17 @@ set shortmess+=c
 " always show signcolumns
 "set signcolumn=yes
 
+function! FindReferences()
+  NERDTreeClose
+  call CocAction('jumpReferences')
+endfunction
+
+
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gr :call FindReferences()<CR>
 
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
