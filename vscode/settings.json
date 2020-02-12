@@ -1,0 +1,121 @@
+{
+  "editor.minimap.enabled": false,
+  "workbench.activityBar.visible": false,
+  "editor.wordWrap": "on",
+  "terminal.integrated.fontFamily": "Monospace",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 17,
+  "editor.fontLigatures": true,
+  // "editor.fontWeight": "600", // Medium
+  "java.home": "/usr/lib/jvm/java-11-openjdk",
+  "explorer.openEditors.visible": 0,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.titleBarStyle": "custom",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules/": true
+  },
+  "gitlens.views.repositories.location": "scm",
+  "gitlens.views.fileHistory.location": "scm",
+  "gitlens.views.lineHistory.location": "scm",
+  "gitlens.views.search.location": "scm",
+  "gitlens.views.compare.location": "scm",
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "window.zoomLevel": 0,
+  "files.hotExit": "onExitAndWindowClose",
+  "editor.largeFileOptimizations": false,
+  "terminal.external.linuxExec": "nterm.sh",
+  "terminal.integrated.copyOnSelection": true,
+  "window.restoreWindows": "all",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js", //class keyword
+        ],
+        "settings": {
+          //   "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "workbench.editor.showTabs": false,
+  "workbench.editor.enablePreview": false,
+  "window.title": "${rootName} - Code",
+  "workbench.colorCustomizations": {
+    "contrastActiveBorder": "#0147c9"
+  },
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#b52e31"
+    },
+    {
+      "name": "Auth0 Orange",
+      "value": "#eb5424"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "C# Purple",
+      "value": "#68217A"
+    },
+    {
+      "name": "Gatsby Purple",
+      "value": "#639"
+    },
+    {
+      "name": "Go Cyan",
+      "value": "#5dc9e2"
+    },
+    {
+      "name": "Java Blue-Gray",
+      "value": "#557c9b"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#00b3e6"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
