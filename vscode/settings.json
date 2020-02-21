@@ -149,4 +149,12 @@
     "statusBar.noFolderBackground": "#1c8effb4",
     "statusBar.debuggingBackground": "#1c8effb4"
   },
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-n>"],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ]
+    },
+  ]
 }
