@@ -4,9 +4,13 @@
   "editor.wordWrap": "on",
   "terminal.integrated.fontFamily": "Monospace",
   "editor.fontFamily": "JetBrains Mono",
-  "editor.fontSize": 17,
+  "editor.fontSize": 16,
   "editor.fontLigatures": true,
-  // "editor.fontWeight": "600", // Medium
+  "editor.renderLineHighlight": "all",
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "solid",
+  "editor.folding": false,
+  // "editor.fontWeight": "500", // Medium
   "java.home": "/usr/lib/jvm/java-11-openjdk",
   "explorer.openEditors.visible": 0,
   "editor.suggestSelection": "first",
@@ -58,9 +62,6 @@
   "workbench.editor.showTabs": false,
   "workbench.editor.enablePreview": false,
   "window.title": "${rootName} - Code",
-  "workbench.colorCustomizations": {
-    "contrastActiveBorder": "#0147c9"
-  },
   "peacock.favoriteColors": [
     {
       "name": "Angular Red",
@@ -117,5 +118,35 @@
   ],
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.lineNumbers": "relative",
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": ["#1c8effb4"],
+  "vim.statusBarColors.insert": "#BF616A",
+  "vim.statusBarColors.visual": "#B48EAD",
+  "vim.statusBarColors.visualline": "#B48EAD",
+  "vim.statusBarColors.visualblock": "#A3BE8C",
+  "vim.statusBarColors.replace": "#D08770",
+  "vim.statusBarColors.commandlineinprogress": "#007ACC",
+  "vim.statusBarColors.searchinprogressmode": "#007ACC",
+  "vim.statusBarColors.easymotionmode": "#007ACC",
+  "vim.statusBarColors.easymotioninputmode": "#007ACC",
+  "vim.statusBarColors.surroundinputmode": "#007ACC",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#1c8effb4",
+    "statusBar.noFolderBackground": "#1c8effb4",
+    "statusBar.debuggingBackground": "#1c8effb4"
+  },
 }
